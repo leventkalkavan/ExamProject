@@ -1,0 +1,12 @@
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/bin/Debug/net6.0/EntityLayer.deps.json
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/bin/Debug/net6.0/EntityLayer.dll
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/bin/Debug/net6.0/EntityLayer.pdb
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/EntityLayer.csproj.AssemblyReference.cache
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/EntityLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/EntityLayer.AssemblyInfoInputs.cache
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/EntityLayer.AssemblyInfo.cs
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/EntityLayer.csproj.CoreCompileInputs.cache
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/EntityLayer.dll
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/refint/EntityLayer.dll
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/EntityLayer.pdb
+/Users/leventkalkavan/Desktop/ExamProject/EntityLayer/obj/Debug/net6.0/ref/EntityLayer.dll

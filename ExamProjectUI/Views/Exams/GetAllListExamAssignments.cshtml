@@ -1,0 +1,27 @@
+@model List<BusinessLayer.DTOs.ExamAssignmentDtos.ResultExamAssignmentDto>
+
+<h2>Sınav Atamaları</h2>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Sınav Adı</th>
+            <th>Sınav Başlama Saati</th>
+            <th>Sınav Bitiş Saati</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var examAssignment in Model)
+        {
+            <tr>
+                <td>@examAssignment.Id</td>
+                <td>@examAssignment.ExamName</td>
+                <td>@examAssignment.StartTime</td>
+                <td>@examAssignment.EndTime</td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br>
+<a asp-action="CreateExamAssignment" class="btn btn-primary">Sınav Ataması Yap</a>

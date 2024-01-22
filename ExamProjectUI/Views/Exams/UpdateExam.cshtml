@@ -1,0 +1,39 @@
+@model BusinessLayer.DTOs.ExamDtos.UpdateExamDto
+
+<h2>Sınavı Güncelle</h2>
+
+<form asp-action="UpdateExam" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label for="Name">Ad:</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="ExamMinute">Dakika:</label>
+        <input asp-for="ExamMinute" class="form-control" />
+        <span asp-validation-for="ExamMinute" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="Description">Açıklama:</label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="SuccessScore">Başarı Puanı:</label>
+        <input asp-for="SuccessScore" class="form-control" />
+        <span asp-validation-for="SuccessScore" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label for="CategoryId">Kategori:</label>
+        <select asp-for="CategoryId" asp-items="ViewBag.Categories" class="form-control"></select>
+        <span asp-validation-for="CategoryId" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Güncelle</button>
+</form>

@@ -1,0 +1,26 @@
+@using EntityLayer.Entities
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model BusinessLayer.DTOs.QuestionDtos.UpdateQuestionDto
+
+<h2>Soru Güncelle</h2>
+
+<form asp-action="UpdateQuestion" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div class="form-group">
+        <label asp-for="Description" class="control-label">İçerik</label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="QuestionType" class="control-label">Soru Tipi</label>
+        <select asp-for="QuestionType" asp-items="ViewBag.QuestionTypes" class="form-control"></select>
+        <span asp-validation-for="QuestionType" class="text-danger"></span>
+    </div>
+
+    <br>
+    <div class="form-group">
+        <input type="submit" value="Güncelle" class="btn btn-primary" />
+    </div>
+</form>

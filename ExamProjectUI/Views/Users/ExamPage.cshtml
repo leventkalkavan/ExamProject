@@ -1,0 +1,104 @@
+@model ExamProjectUI.Models.ViewModels.ExamPageViewModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sınav</title>
+</head>
+<body>
+
+<div class="container">
+    <p class="text-center">Sınav Süresi: <span id="remainingTime">@Model.RemainingTime.ToString(@"hh\:mm\:ss")</span></p>
+
+   <form id="examForm" method="post" action="@Url.Action("SubmitExam", "Users")">
+        <input type="hidden" name="ExamAssignmentId" value="@Model.ExamAssignmentId"/>
+
+        @for (int i = 0; i < Model.Questions.Count; i++)
+        {
+            var question = Model.Questions[i];
+
+            <div class="question-container">
+                <h4>Soru @(i + 1):</h4>
+                <p class="question-description">@question.Description</p>
+
+                <input type="hidden" name="QuestionAnswers[@i].QuestionId" value="@question.QuestionId"/>
+
+                <div class="choices-container">
+                    @foreach (var choice in question.Choices)
+                    {
+                        <label class="custom-radio">
+                            <input type="radio" name="QuestionAnswers[@i].SelectedChoiceId" value="@choice.ChoiceId"/>
+                            @choice.Text
+                        </label>
+                    }
+                </div>
+            </div>
+            <hr/>
+        }
+
+        <button id="submitBtn" type="submit">Sınavı Tamamla</button>
+    </form>
+</div>
+<script>
+    var remainingTime = localStorage.getItem('remainingTime') || @Model.RemainingTime.TotalMilliseconds;
+    var countdownInterval;
+
+    function startCountdown() {
+        countdownInterval = setInterval(function () {
+            remainingTime -= 1000;
+            updateRemainingTime();
+
+            if (remainingTime <= 0) {
+                clearInterval(countdownInterval);
+                submitExam();
+            }
+        }, 1000);
+    }
+
+    function updateRemainingTime() {
+        var hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+        document.getElementById("remainingTime").innerHTML = hours + ":" + minutes + ":" + seconds;
+
+        localStorage.setItem('remainingTime', remainingTime);
+    }
+
+    function submitExam() {
+        localStorage.removeItem('remainingTime');
+        document.getElementById("examForm").submit();
+    }
+
+    window.onload = startCountdown;
+</script>
+<style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            background-color: #ffffff;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        .choices-container label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        #submitBtn {
+            background-color: #007bff;
+            color: #ffffff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</body>
+</html>

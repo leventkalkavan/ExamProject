@@ -1,0 +1,133 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ExamProjectUI
+build_property.RootNamespace = ExamProjectUI
+build_property.ProjectDir = /Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = /Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI
+build_property._RazorSourceGeneratorDebug = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Account/CreateUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9DcmVhdGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQWNjb3VudC9Mb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Categories/CreateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9DcmVhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Categories/GetAllListCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9HZXRBbGxMaXN0Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Categories/UpdateCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcmllcy9VcGRhdGVDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Choices/CreateChoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hvaWNlcy9DcmVhdGVDaG9pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Choices/GetAllChoices.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hvaWNlcy9HZXRBbGxDaG9pY2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Choices/UpdateChoice.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hvaWNlcy9VcGRhdGVDaG9pY2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Exams/CreateExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhhbXMvQ3JlYXRlRXhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Exams/CreateExamAssignment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhhbXMvQ3JlYXRlRXhhbUFzc2lnbm1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Exams/GetAllListExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhhbXMvR2V0QWxsTGlzdEV4YW0uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Exams/GetAllListExamAssignments.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhhbXMvR2V0QWxsTGlzdEV4YW1Bc3NpZ25tZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Exams/UpdateExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRXhhbXMvVXBkYXRlRXhhbS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/QuestionCategories/CreateQuestionCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVlc3Rpb25DYXRlZ29yaWVzL0NyZWF0ZVF1ZXN0aW9uQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/QuestionCategories/GetAllListQuestionCategories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVlc3Rpb25DYXRlZ29yaWVzL0dldEFsbExpc3RRdWVzdGlvbkNhdGVnb3JpZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/QuestionCategories/UpdateQuestionCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVlc3Rpb25DYXRlZ29yaWVzL1VwZGF0ZVF1ZXN0aW9uQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Questions/CreateQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVlc3Rpb25zL0NyZWF0ZVF1ZXN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Questions/GetAllListQuestions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVlc3Rpb25zL0dldEFsbExpc3RRdWVzdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Questions/UpdateQuestion.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUXVlc3Rpb25zL1VwZGF0ZVF1ZXN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Users/ExamPage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvRXhhbVBhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Users/GetAllExams.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvR2V0QWxsRXhhbXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Users/StartExam.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVXNlcnMvU3RhcnRFeGFtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/leventkalkavan/Desktop/ExamProject/ExamProjectUI/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-tjeti5kcwr

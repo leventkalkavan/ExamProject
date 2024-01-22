@@ -1,0 +1,21 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model ExamProjectUI.Models.ViewModels.StartExamViewModel
+
+<div class="text-center">
+    <h2>Sınava Başla</h2>
+    <br>
+    <p>Sınav Adı: @Model.ExamName</p>
+    <p>Açıklama: @Model.ExamDescription</p>
+    <p>Sınav Süresi: @Model.ExamMinute Dakika</p>
+    <p>Başlama Tarihi: @Model.StartTime</p>
+    <p>Bitiş Tarihi: @Model.EndTime</p>
+    <br>
+    @if (DateTime.Now >= Model.StartTime && DateTime.Now <= Model.EndTime)
+    {
+        <a asp-action="ExamPage" asp-route-examAssignmentId="@Model.ExamAssignmentId" class="btn btn-primary">Sınava Başla</a>
+    }
+    else
+    {
+        <p>Sınav başlamamış veya süresi geçmiş.</p>
+    }
+</div>

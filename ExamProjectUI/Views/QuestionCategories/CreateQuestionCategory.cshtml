@@ -1,0 +1,23 @@
+@model BusinessLayer.DTOs.QuestionCategoryDtos.CreateQuestionCategoryDto
+
+<h2>Soru Kategori Oluştur</h2>
+
+<form asp-action="CreateQuestionCategory" method="post">
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Soru Adı:</label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="ExamId" class="control-label">Sınav</label>
+        <select asp-for="ExamId" class="form-control" asp-items="ViewBag.Exams">
+                    <option value="">Sınav Seçiniz</option>
+                </select>
+        <span asp-validation-for="ExamId" class="text-danger"></span>
+    </div>
+    <br>
+    <div class="form-group">
+        <button type="submit" class="btn btn-primary">Oluştur</button>
+    </div>
+</form>

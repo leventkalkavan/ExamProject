@@ -1,0 +1,36 @@
+@model BusinessLayer.DTOs.ChoiceDto.CreateChoiceDto
+
+<h2>Yeni Seçenek Oluştur</h2>
+
+<form asp-action="CreateChoice" method="post">
+    <div class="form-group">
+        <label asp-for="Text" class="control-label">Seçenek Metni</label>
+        <input asp-for="Text" class="form-control"/>
+        <span asp-validation-for="Text" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Doğru Seçenek Mi?</label>
+        <div class="form-check">
+            <input asp-for="TrueChoice" class="form-check-input" type="radio" value="true" id="trueChoice" name="TrueChoice">
+            <label class="form-check-label" for="trueChoice">Evet</label>
+        </div>
+        <div class="form-check">
+            <input asp-for="TrueChoice" class="form-check-input" type="radio" value="false" id="falseChoice" name="TrueChoice">
+            <label class="form-check-label" for="falseChoice">Hayır</label>
+        </div>
+        <span asp-validation-for="TrueChoice" class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="QuestionId" class="control-label">Soru</label>
+        <select asp-for="QuestionId" asp-items="ViewBag.Questions" class="form-control">
+            <option value="" disabled selected>Soru Seçiniz</option>
+        </select>
+        <span asp-validation-for="QuestionId" class="text-danger"></span>
+    </div>
+    <br>
+    <div class="form-group">
+        <input type="submit" value="Oluştur" class="btn btn-primary"/>
+    </div>
+</form>

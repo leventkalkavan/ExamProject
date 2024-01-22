@@ -1,0 +1,41 @@
+@model List<BusinessLayer.DTOs.ChoiceDto.ResultChoiceDto>
+
+<h2>Tüm Şıklar</h2>
+
+<table class="table text-center">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Soru</th>
+            <th>Şık</th>
+            <th>Doğru Şık mı?</th>
+            <th>İşlemler</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var choice in Model)
+        {
+            <tr>
+                <td>@choice.Id</td>
+                <td>@choice.QuestionName</td>
+                <td>@choice.Text</td>
+                <td>
+                    @if (choice.TrueChoice)
+                    {
+                        <span>Evet</span>
+                    }
+                    else
+                    {
+                        <span>Hayır</span>
+                    }
+                </td>
+            <td>
+                <a asp-action="UpdateChoice" asp-route-id="@choice.Id">Güncelle</a> |
+                <a asp-action="Delete" asp-route-id="@choice.Id">Sil</a>
+            </td>
+            </tr>
+        }
+    </tbody>
+</table>
+<br>
+<a asp-action="CreateChoice" class="btn btn-primary">Şık Oluştur</a>

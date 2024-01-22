@@ -1,0 +1,28 @@
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model BusinessLayer.DTOs.QuestionDtos.CreateQuestionDto
+
+<h2>Soru Oluştur</h2>
+
+<form asp-controller="Questions" asp-action="CreateQuestion" method="post">
+    <div class="form-group">
+        <label asp-for="Description">İçerik:</label>
+        <input asp-for="Description" class="form-control" />
+        <span asp-validation-for="Description" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="QuestionCategoryId">Soru Kategorisi</label>
+        <select asp-for="QuestionCategoryId" asp-items="@(new SelectList(ViewBag.QuestionCategories, "Value", "Text"))" class="form-control">
+            <option value="">Soru Kategorisini Seçiniz</option>
+        </select>
+        <span asp-validation-for="QuestionCategoryId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="QuestionType">Soru Tipi:</label>
+        <select asp-for="QuestionType" asp-items="@(new SelectList(ViewBag.QuestionTypes, "Value", "Text"))" class="form-control">
+            <option value="">Soru Tipini Seçiniz</option>
+        </select>
+        <span asp-validation-for="QuestionType" class="text-danger"></span>
+    </div>
+    <br>
+    <button type="submit" class="btn btn-primary">Oluştur</button>
+</form>

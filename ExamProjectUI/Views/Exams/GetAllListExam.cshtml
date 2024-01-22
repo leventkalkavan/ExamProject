@@ -1,0 +1,36 @@
+@model List<BusinessLayer.DTOs.ExamDtos.ResultExamDto>
+
+<h2>Tüm Sınavlar</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Ad</th>
+        <th>Dakika</th>
+        <th>Başarı Puanı</th>
+        <th>Kategori</th>
+        <th>Açıklama</th>
+        <th>İşlemler</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var exam in Model)
+    {
+        <tr>
+            <td>@exam.Id</td>
+            <td>@exam.Name</td>
+            <td>@exam.ExamMinute</td>
+            <td>@exam.SuccessScore</td>
+            <td>@exam.CategoryName</td>
+            <td>@exam.Description</td>
+            <td>
+                <a asp-action="UpdateExam" asp-route-id="@exam.Id">Güncelle</a>
+                <a asp-action="Delete" asp-route-id="@exam.Id" >Sil</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<br>
+<a asp-action="CreateExam" class="btn btn-primary">Yeni Sınav Oluştur</a>

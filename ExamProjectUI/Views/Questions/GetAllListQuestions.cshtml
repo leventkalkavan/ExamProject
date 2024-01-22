@@ -1,0 +1,43 @@
+@using EntityLayer.Entities
+@using Microsoft.AspNetCore.Mvc.TagHelpers
+@model List<BusinessLayer.DTOs.QuestionDtos.ResultQuestionDto>
+
+<h2>Tüm Sorular</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>İçerik</th>
+        <th>Soru Tipi</th>
+        <th>Soru Kategorisi</th>
+        <th>İşlemler</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var question in Model)
+    {
+        <tr>
+            <td>@question.Id</td>
+            <td>@question.Description</td>
+            <td>
+                @if (question.QuestionType == QuestionType.MultipleChoice)
+                {
+                    <span>Çoktan Seçmeli</span>
+                }
+                else if (question.QuestionType == QuestionType.Descriptive)
+                {
+                    <span>Açıklamalı</span>
+                }
+            </td>
+            <td>@question.QuestionCategoryName</td>
+            <td>
+                <a asp-action="UpdateQuestion" asp-route-id="@question.Id">Güncelle</a> |
+                <a asp-action="Delete" asp-route-id="@question.Id">Sil</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+<br>
+<a asp-action="CreateQuestion" class="btn btn-primary">Soru Oluştur</a>
